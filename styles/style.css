@@ -1,0 +1,161 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f1f1f1;
+}
+
+
+.chat-app {
+  display: flex;
+  max-width: 900px;
+  height: 600px;
+  margin: 40px auto;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.247);
+  border-radius: 20px;
+  overflow: hidden;
+  background: #fff;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 80px;
+  background: #fafafa;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: 1px solid #ddd;
+}
+
+.profile {
+  margin: 10px 0;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: border 0.2s;
+}
+
+.profile img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.profile.active {
+  border: 3px solid #23a343;
+}
+
+/* Chat Container */
+.chat-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-header {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  background: #ffffff;
+  border-bottom: 1px solid #ddd;
+}
+
+.chat-header img.header-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.username {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.status {
+  font-size: 12px;
+  color: #313131;
+}
+
+/* Messages */
+
+.emgi{
+  height: 50px;
+}
+.chat-messages {
+  padding: 20px;
+  flex: 1;
+  overflow-y: scroll;
+  background: #f7f7f7;
+}
+
+.message {
+  margin: 10px 0;
+  display: flex;
+}
+
+.bot {
+  justify-content: flex-start;
+}
+
+.user {
+  justify-content: flex-end;
+}
+
+.bubble {
+  max-width: 70%;
+  padding: 10px 15px;
+  border-radius: 20px;
+  line-height: 1.4;
+}
+
+.bot .bubble {
+  background-color: #e0e0e0;
+  color: #000;
+  border-bottom-left-radius: 0;
+  background-color: #3a3a3a23;
+  box-shadow: #313131;
+}
+
+.user .bubble {
+  background-color: #0084ff;
+  color: white;
+  border-bottom-right-radius: 0;
+}
+
+
+
+.emoji-message {
+  font-size: 32px;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.chat-input {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  border-top: 1px solid #dbdbdb;
+  background: #fff;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 999px;
+  outline: none;
+  font-size: 14px;
+}
+
+.chat-input-icons .icon {
+  width: 22px;
+  margin-left: 12px;
+  cursor: pointer;
+}
+.massage{
+  /* min-width: 10px; */
+  max-width: 40%;
+}
